@@ -11,7 +11,9 @@
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.4;
+      line-height: 1.45;
+      background: #0f1115;
+      color: #e6e6e6;
     }
     .wrap {
       min-height: 100vh;
@@ -20,25 +22,47 @@
       padding: 24px;
     }
     .card {
-      max-width: 720px;
+      max-width: 760px;
       width: 100%;
       padding: 28px 22px;
-      border: 1px solid rgba(128,128,128,.35);
-      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      background: rgba(255,255,255,.03);
+      backdrop-filter: blur(6px);
     }
-    h1 { margin: 0 0 10px 0; font-size: 1.6rem; }
-    p { margin: 8px 0; font-size: 1.05rem; }
-    .muted { opacity: .8; }
+    h1 { margin: 0 0 12px 0; font-size: 1.6rem; }
+    p { margin: 10px 0; font-size: 1.05rem; }
     a { color: inherit; }
+    .muted { opacity: .8; }
+
+    footer {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      font-size: 0.9rem;
+      opacity: .75;
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card" aria-label="Hinweis">
       <h1>Steframi UG (i. G.)</h1>
+
       <p>Hier entsteht demnächst die Internetpräsenz der Steframi UG (i. G.).</p>
-      <p class="muted">Bitte kommen Sie später noch einmal vorbei – in Kürze finden Sie hier Inhalte.</p>
+      <p class="muted">
+        Bitte kommen Sie später noch einmal vorbei – in Kürze finden Sie hier Inhalte.
+      </p>
+
       <p>Kontakt: <a href="mailto:kontakt@steframi.de">kontakt@steframi.de</a></p>
+
+      <footer>
+        <strong>Impressum</strong><br />
+        Steframi UG (in Gründung)<br />
+        Vertreten durch: Frank Billen<br />
+        Sitz: Troisdorf, Deutschland<br />
+        E-Mail: <a href="mailto:kontakt@steframi.de">kontakt@steframi.de</a>
+      </footer>
     </section>
   </main>
 </body>
